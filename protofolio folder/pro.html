@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yanet Diribsa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#f9fafc;
+    color:#333;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%; 
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    z-index:1000;
+}
+
+nav h2{
+    color:#4f46e5;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#4f46e5;
+}
+
+/* HERO */
+.hero{
+    height:120vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:0 20px;
+    background:linear-gradient(to right,#4f46e5,#5d5fe1);
+    color:white;
+}
+
+.hero h1{
+    font-size:3rem;
+    animation:fadeDown 1s ease;
+}
+
+.hero p{
+    font-size:1.2rem;
+    animation:fadeUp 1.2s ease;
+}
+
+.btn{
+    margin-top:25px;
+    padding:12px 25px;
+    background:white;
+    color:#4f46e5;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#eee;
+}
+
+/* SECTIONS */
+section{
+    padding:100px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2rem;
+    color:#4f46e5;
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgb(243, 242, 244);
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    transition:0.6s;
+    opacity:0;
+    transform:translateY(40px);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card a{
+    text-decoration:none;
+    color:#4f46e5;
+    font-weight:600;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111;
+    color:white;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown{
+    from{opacity:0; transform:translateY(-20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+.jeje-img{
+    width: 300px;
+    padding : 20px;
+    padding-bottom: 0px;
+   
+}
+    .certs{
+        width: 370px;
+        padding: 25px;
+        padding-left: 60px;
+    }
+
+
+</style>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <h2>Yanet Diribsa</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <h1>Hi, I'm Yanet 👋</h1>
+    <p>Professional Web Developer | Building Modern & Responsive Websites using HTML,CSS, Javascript and Python</p>
+    <a href="#projects"><button class="btn"> View my work</button></a>
+    <img src="ere.jpg" alt="pic" class="jeje-img"> 
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:600px; margin:auto;">
+        I am a passionate web developer focused on building clean, responsive,
+        and user-friendly websites. I enjoy solving problems and creating
+        modern digital experiences. I have been learning web development for over 1
+        year. I have certificates on Programming fundamentals and android development(check out below!!).
+    </p>
+    <img src="cert.jpg" alt="cert" class="certs"> <img src="holo.png" alt="seccert" class="certs">
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+        <div class="card">
+            <h3>Practice Question For Students</h3>
+            <p>Practice questions to prepare students for their exams.</p>
+            <a href="https://grade8mockexam.netlify.app">Live Demo →</a>
+        </div>
+
+        <div class="card">
+            <h3>School Website</h3>
+            <p>Clean website for school layout with multiple pages and a chatbot.</p>
+            <a href="https://greatvisionacademy.netlify.app">Live Demo →</a>
+        </div>
+        
+        
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: yanetdiribsa3@gmail.com</p>
+    <p>Phone number: +251 97 964 0792</p>
+    <p>Telegram: @yanet331</p>
+    <p>Instagram: yanetdiribsa</p>
+</section>
+
+<footer>
+    © 2026 Yanet | Web Developer
+</footer>
+
+<script>
+// Scroll animation
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+    cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        if(cardTop < window.innerHeight - 100){
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
+        }
+    });
+});
+</script>
+
+</body>
+</html>
